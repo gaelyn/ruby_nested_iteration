@@ -18,6 +18,6 @@ class Course
 
     all_houses.map do |student|
       student.house
-    end 
+    end
   end
 end
