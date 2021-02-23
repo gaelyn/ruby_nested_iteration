@@ -22,4 +22,16 @@ class School
       end
     end
   end
+
+  def student_names
+    student_names = []
+    @courses.each do |course|
+      course.students.each do |student|
+        student_names << student.name
+      end
+    end
+    student_names.uniq do |name|
+      name
+    end
+  end
 end
